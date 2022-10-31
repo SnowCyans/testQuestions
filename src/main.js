@@ -19,6 +19,10 @@ import axios from 'axios'
 import dashboard from '@/module-dashboard/' // 面板
 import hmmm from '@/module-hmmm/'
 import Cookies from 'js-cookie'
+// 注册全局组件(在注册)
+import components from '@/components'
+Vue.use(components)
+
 axios.defaults.baseURL = 'http://hmmm-api.itheima.net'
 
 const TokenKey = 'Admin-Token'

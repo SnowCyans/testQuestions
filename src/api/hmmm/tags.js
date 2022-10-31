@@ -19,10 +19,10 @@ export const simple = data => createAPI('/tags/simple', 'get', data)
 export const detail = data => createAPI(`/tags/${data.id}`, 'get', data)
 
 // 标签添加
-export const add = data => createAPI('/tags', 'post', data)
+export const tagsAdd = data => createAPI('/tags', 'post', data)
 
 // 标签修改
-export const update = data => createAPI(`/tags/${data.id}`, 'put', data)
+export const tagsUpdate = data => createAPI(`/tags/${data.id}`, 'put', data)
 
 // 标签删除
 export const remove = data => createAPI(`/tags/${data.id}`, 'delete', data)

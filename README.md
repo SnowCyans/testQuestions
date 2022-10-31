@@ -3,11 +3,11 @@
 ## 安装依赖
 
 ```
-npm install
+yarn
 ```
 
 ### 启动项目
 
 ```
-npm run serve
+yarn dev
 ```

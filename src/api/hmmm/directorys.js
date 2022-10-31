@@ -19,7 +19,7 @@ export const simple = data => createAPI('/directorys/simple', 'get', data)
 export const detail = data => createAPI(`/directorys/${data.id}`, 'get', data)
 
 // 目录添加
-export const add = data => createAPI('/directorys', 'post', data)
+export const direAdd = data => createAPI('/directorys', 'post', data)
 
 // 目录修改
 export const update = data => createAPI(`/directorys/${data.id}`, 'put', data)
@@ -29,4 +29,4 @@ export const remove = data =>
   createAPI(`/directorys/${data.id}`, 'delete', data)
 
 // 目录状态
-export const changeState = data => createAPI(`/directorys/${data.id}/${data.state}`, 'post', data)
+export const changeState = data => createAPI(`/directorys/${data.id}/${data.state}`, 'post')
